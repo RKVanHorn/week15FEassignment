@@ -5,3 +5,11 @@
 .navbar-gif {
   height: 100px;
 }
+
+.navbar {
+  display: flex;
+}
+
+.navbar h1 {
+  align-self: flex-end;
+}

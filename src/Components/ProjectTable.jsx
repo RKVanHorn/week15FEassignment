@@ -47,6 +47,7 @@ export default function ProjectTable(props) {
           <tbody>
             {props.projects.map((project, index) => (
               <Project
+                // key={project.id} Why doesn't this work????
                 key={index}
                 project={project}
                 clickDelete={props.clickDelete}

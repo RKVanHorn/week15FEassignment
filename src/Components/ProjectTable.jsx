@@ -45,10 +45,9 @@ export default function ProjectTable(props) {
             </tr>
           </thead>
           <tbody>
-            {props.projects.map((project, index) => (
+            {props.projects.map((project) => (
               <Project
-                // key={project.id} Why doesn't this work????
-                key={index}
+                key={project.id}
                 project={project}
                 clickDelete={props.clickDelete}
                 clickUpdate={props.clickUpdate}

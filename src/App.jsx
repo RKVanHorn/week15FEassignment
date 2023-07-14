@@ -7,7 +7,7 @@ import Navbar from "./Components/Navbar";
 function App() {
   const URL = "https://648b4e4317f1536d65eac305.mockapi.io/api/homeprojects";
 
-  const [projects, setProjects] = useState([{}]);
+  const [projects, setProjects] = useState([]);
 
   const getProjects = () => {
     fetch(URL)

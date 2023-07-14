@@ -15,9 +15,7 @@ export default function Project(props) {
       {props.project.priority === "2" && <td>Medium</td>}
       {props.project.priority === "3" && <td>Low</td>}
       <td>${props.project.cost}</td>
-      <td>
-        {props.project.time} {props.project.time === "1" ? "hour" : "hours"}
-      </td>
+      <td>{props.project.time}</td>
       <td>{props.project.notes}</td>
       <td>
         <UpdateProjectForm

@@ -110,7 +110,7 @@ export default function AddProjectForm(props) {
               <Form.Label>Time</Form.Label>
               <Form.Control
                 placeholder="Enter estimated time"
-                type="number"
+                type="text"
                 id="timeInput"
                 name="time"
                 onChange={handleChange}

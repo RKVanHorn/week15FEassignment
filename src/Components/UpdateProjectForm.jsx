@@ -5,22 +5,7 @@ import Form from "react-bootstrap/Form";
 
 function UpdateProjectForm(props) {
   const [show, setShow] = useState(false);
-
   const [updatedProject, setUpdatedProject] = useState({ ...props.project });
-
-  console.log(props.project); //shows me that each project has the correct id
-  console.log(updatedProject.id); //so why then does the first project.id come back as undefined here?
-  console.log(updatedProject.name); //this also comes back as undefined for the first project, so why am I losing the first project when they go into state?
-
-  /* I tried to set state this way also but it does the same thing */
-  // const [updatedProject, setUpdatedProject] = useState({
-  //   id: props.project.id,
-  //   name: props.project.name,
-  //   priority: props.project.priority,
-  //   cost: props.project.cost,
-  //   time: props.project.time,
-  //   notes: props.project.notes,
-  // });
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -102,7 +87,7 @@ function UpdateProjectForm(props) {
                 <Form.Label>Updated Time</Form.Label>
                 <Form.Control
                   placeholder="Update time"
-                  type="number"
+                  type="text"
                   id="timeUpdate"
                   name="time"
                   onChange={handleChange}

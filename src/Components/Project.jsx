@@ -1,15 +1,10 @@
 import UpdateProjectForm from "./UpdateProjectForm";
 import Button from "react-bootstrap/Button";
-import { useState } from "react";
 
 export default function Project(props) {
-  //const [checked, setChecked] = useState(props.project.checked);
-  //console.log(checked);
   return (
+    /*ProjectTable calls this component and maps over the projects creating a table row for each project */
     <tr className={props.project.checked ? "checked" : " "}>
-      {/* <td>
-        <input type="checkbox" onClick={() => setChecked(!checked)} />
-      </td> */}
       <td>{props.project.name}</td>
       {props.project.priority === "1" && <td>High</td>}
       {props.project.priority === "2" && <td>Medium</td>}

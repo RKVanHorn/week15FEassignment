@@ -9,6 +9,7 @@ function App() {
 
   const [projects, setProjects] = useState([]);
 
+  //READ - get the projects from the API and set them as the state for the project
   const getProjects = async () => {
     const response = await fetch(URL);
     const data = await response.json();
@@ -17,10 +18,12 @@ function App() {
     //.then((data) => setProjects(data));
   };
 
+  //use the useEffect hook so that getProjects won't create an infinite loop of re-renders
   useEffect(() => {
     getProjects();
   }, []);
 
+  //DELETE a project - deletes a project by passing in the id of the project to delete and sending the delete method to our API via FETCH
   const deleteProject = async (idToDelete) => {
     await fetch(`${URL}/${idToDelete}`, {
       method: "DELETE",
@@ -29,6 +32,7 @@ function App() {
     //.then(() => getProjects());
   };
 
+  //CREATE a new project by gathering new project data and then passing that to the API using the POST method
   const postNewProject = async (newProject) => {
     const response = await fetch(URL, {
       method: "POST",
@@ -40,6 +44,9 @@ function App() {
     // .then(() => getProjects());
   };
 
+  /*UPDATE a project by gathering the updated project data as a new object and then sending it to the correct API endpoint using the project ID,
+    and using PUT to replace the old data. Map over the projects array until I find the project that has the same id as the one that was updated and 
+    then replace that project with the new one received in response from the API */
   const updateProject = async (updatedProject) => {
     const response = await fetch(`${URL}/${updatedProject.id}`, {
       method: "PUT",

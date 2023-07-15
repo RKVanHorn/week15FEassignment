@@ -4,6 +4,7 @@ import Table from "react-bootstrap/Table";
 import Card from "react-bootstrap/Card";
 
 export default function ProjectTable(props) {
+  /**In the future I want to add the ability to sort the table by priority or cost.  */
   // const [projectsData, setProjectsData] = useState({ ...props.projects });
   // const [order, setOrder] = useState("ASC");
   // console.log(projectsData);
@@ -25,6 +26,9 @@ export default function ProjectTable(props) {
   //   }
   // };
 
+  /**Sets up the project table and then takes the projects from the App component where they are held in state and
+   * maps over them, creating an instance of Project for each project which populates the table
+   */
   return (
     <Card className="m-3 bg-success">
       <Card.Header className="text-center text-white fs-4 fw-bold">
@@ -34,7 +38,6 @@ export default function ProjectTable(props) {
         <Table variant="success" striped bordered hover>
           <thead>
             <tr>
-              {/* <th>Done</th> */}
               <th>Project Name</th>
               <th /*onClick={() => sorting("priority")}*/>Priority</th>
               <th /*onClick={() => sorting("cost")}*/>Cost</th>

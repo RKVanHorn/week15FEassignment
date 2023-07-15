@@ -4,12 +4,20 @@ import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 
 function UpdateProjectForm(props) {
+  /**Setting up state for the modal as well as to hold the updatedProject. I set the original project in state so that the
+   * form could be populated with the original data for each project.
+   */
   const [show, setShow] = useState(false);
   const [updatedProject, setUpdatedProject] = useState({ ...props.project });
 
+  /**Functions to handle the modal */
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  /**Catching the changes to the project so that the updatedProject object can be passed to the updateProject method.
+   * If the form field is a checkbox then the change that is captured is whether it is checked or not, otherwise the value of the field is used
+   * to set the updatedProject
+   */
   function handleChange(e) {
     const { name, value, type, checked } = e.target;
     setUpdatedProject((prevData) => {
@@ -20,6 +28,7 @@ function UpdateProjectForm(props) {
     });
   }
 
+  /**Calling the updateProject method using the updatedProject object as the argument and then close the modal */
   function handleSubmit(e) {
     e.preventDefault();
     //console.log(updatedProject);

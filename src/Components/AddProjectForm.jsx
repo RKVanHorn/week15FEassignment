@@ -15,6 +15,7 @@ export default function AddProjectForm(props) {
     checked: false,
   });
 
+  /**Creating a new project object to send to the API in the postNewProject function */
   function handleChange(e) {
     const { name, value } = e.target;
     setNewProject((prevData) => {
@@ -26,12 +27,9 @@ export default function AddProjectForm(props) {
   }
   // console.log(newProject);
 
-  // function handleKeyDown(e) {
-  //   if (e.key === "Enter") {
-  //     handleSubmit(e);
-  //   }
-  // }
-
+  /**Calling the postNewProject function when the form is submitted, as long as there is a project name and priority assigned
+   * If not, an alert pops up and the user has to enter the required data before moving forward
+   */
   function handleSubmit(e) {
     e.preventDefault;
     if (newProject.name === "" || newProject.priority === "") {

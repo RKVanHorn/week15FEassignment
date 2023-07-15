@@ -11,11 +11,11 @@ function UpdateProjectForm(props) {
   const handleShow = () => setShow(true);
 
   function handleChange(e) {
-    const { name, value } = e.target;
+    const { name, value, type, checked } = e.target;
     setUpdatedProject((prevData) => {
       return {
         ...prevData,
-        [name]: value,
+        [name]: type === "checkbox" ? checked : value,
       };
     });
   }
@@ -105,6 +105,18 @@ function UpdateProjectForm(props) {
                   name="notes"
                   onChange={handleChange}
                   value={updatedProject.notes}
+                />
+              </Form.Group>
+            </div>
+            <div className="row">
+              <Form.Group className="mb-3">
+                <Form.Label>Check to mark this project completed</Form.Label>
+                <Form.Check
+                  type="checkbox"
+                  id="checked"
+                  name="checked"
+                  onChange={handleChange}
+                  checked={updatedProject.checked}
                 />
               </Form.Group>
             </div>

@@ -4,7 +4,7 @@ import Table from "react-bootstrap/Table";
 import Card from "react-bootstrap/Card";
 
 export default function ProjectTable(props) {
-  // const [projectsData, setProjectsData] = useState(props.projects);
+  // const [projectsData, setProjectsData] = useState({ ...props.projects });
   // const [order, setOrder] = useState("ASC");
   // console.log(projectsData);
 
@@ -34,7 +34,7 @@ export default function ProjectTable(props) {
         <Table variant="success" striped bordered hover>
           <thead>
             <tr>
-              <th>Done</th>
+              {/* <th>Done</th> */}
               <th>Project Name</th>
               <th /*onClick={() => sorting("priority")}*/>Priority</th>
               <th /*onClick={() => sorting("cost")}*/>Cost</th>

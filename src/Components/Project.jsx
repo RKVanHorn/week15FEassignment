@@ -3,13 +3,13 @@ import Button from "react-bootstrap/Button";
 import { useState } from "react";
 
 export default function Project(props) {
-  const [checked, setChecked] = useState(props.project.checked);
+  //const [checked, setChecked] = useState(props.project.checked);
   //console.log(checked);
   return (
-    <tr className={checked ? "checked" : " "}>
-      <td>
+    <tr className={props.project.checked ? "checked" : " "}>
+      {/* <td>
         <input type="checkbox" onClick={() => setChecked(!checked)} />
-      </td>
+      </td> */}
       <td>{props.project.name}</td>
       {props.project.priority === "1" && <td>High</td>}
       {props.project.priority === "2" && <td>Medium</td>}

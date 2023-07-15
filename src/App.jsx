@@ -9,6 +9,29 @@ function App() {
 
   const [projects, setProjects] = useState([]);
 
+  /**In the future I want to add the ability to sort the table by priority or cost.  */
+  // const [projectsData, setProjectsData] = useState({ ...props.projects });
+  const [order, setOrder] = useState("ASC");
+  // console.log(projectsData);
+
+  const sortPriority = () => {
+    if (order === "ASC") {
+      const sortedData = [...projects].sort(
+        (a, b) => Number(a.priority) - Number(b.priority)
+      );
+
+      setProjects(sortedData);
+      setOrder("DSC");
+    }
+    if (order === "DSC") {
+      const sortedData = [...projects].sort(
+        (a, b) => Number(b.priority) - Number(a.priority)
+      );
+      setProjects(sortedData);
+      setOrder("ASC");
+    }
+  };
+
   //READ - get the projects from the API and set them as the state for the project
   const getProjects = async () => {
     const response = await fetch(URL);
@@ -74,6 +97,7 @@ function App() {
         projects={projects}
         clickDelete={deleteProject}
         clickUpdate={updateProject}
+        sortPriority={sortPriority}
       />
       <footer className="pageFooter p-2 bg-success text-center text-white">
         Created by RKVanHorn 2023

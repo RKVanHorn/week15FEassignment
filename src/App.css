@@ -15,6 +15,10 @@
 .navbar h1 {
   align-self: flex-end;
 }
+/*Table*/
+.priorityColumn {
+  cursor: pointer;
+}
 
 /*Footer*/
 .page-footer {

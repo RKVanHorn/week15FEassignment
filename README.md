@@ -42,7 +42,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]]
+![Product Name Screen Shot][product-screenshot]
 
 This application allows users to plan projects that they'd like to do around their home. It has fields for project name, priority, cost, time and notes. Users can add a project to their planner, update the project, including marking it complete and delete the project if desired. MockAPI is set up as the back end. 
 

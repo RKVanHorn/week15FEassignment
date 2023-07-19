@@ -42,7 +42,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]]
 
 This application allows users to plan projects that they'd like to do around their home. It has fields for project name, priority, cost, time and notes. Users can add a project to their planner, update the project, including marking it complete and delete the project if desired. MockAPI is set up as the back end. 
 
@@ -156,7 +156,7 @@ Project Link: [[(https://github.com/RKVanHorn/week15FEassignment)](https://githu
 [license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/rachelkvanhorn
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: homeprojectplanner.jpeg
 [CSS.js]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
 [CSS-url]:https://www.w3.org/Style/CSS/Overview.en.html
 [Javascript.js]: https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E

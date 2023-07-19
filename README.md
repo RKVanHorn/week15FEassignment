@@ -120,12 +120,10 @@ Don't forget to give the project a star! Thanks again!
 
 <!-- CONTACT -->
 ## Contact
+[![LinkedIn][linkedin-shield]][linkedin-url] <br/>
+R_VanHorn@outlook.com <br/>
 
-Rachel VanHorn - 
-[![LinkedIn][linkedin-shield]][linkedin-url] 
-R_VanHorn@outlook.com
-
-Project Link: [[(https://github.com/RKVanHorn/week15FEassignment)](https://github.com/RKVanHorn/week15FEassignment)]
+Project link: https://github.com/RKVanHorn/week15FEassignment
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

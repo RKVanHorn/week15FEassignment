@@ -4,7 +4,7 @@
 <h3 align="center">Home Project Planner</h3>
 
   <p align="center">
-    React Application build using Bootstrap, Bootswatch and React-Bootstrap - allows full CRUD operations using MockAPI as a back end.
+    React Application built using Bootstrap, Bootswatch and React-Bootstrap - allows full CRUD operations using MockAPI as a back end.
     <br />
     <a href="https://github.com/RKVanHorn/week15FEassignment"><strong>Explore the docs »</strong></a>
     <br />

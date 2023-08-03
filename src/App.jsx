@@ -41,7 +41,7 @@ function App() {
     //.then((data) => setProjects(data));
   };
 
-  //use the useEffect hook so that getProjects won't create an infinite loop of re-renders
+  //use the useEffect hook so that when the App component renders for the first time, getProjects will be called to populate the project table
   useEffect(() => {
     getProjects();
   }, []);

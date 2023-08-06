@@ -10,9 +10,7 @@ function App() {
   const [projects, setProjects] = useState([]);
 
   /**In the future I want to add the ability to sort the table by priority or cost.  */
-  // const [projectsData, setProjectsData] = useState({ ...props.projects });
   const [order, setOrder] = useState("ASC");
-  // console.log(projectsData);
 
   const sortPriority = () => {
     if (order === "ASC") {

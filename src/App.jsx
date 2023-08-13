@@ -97,8 +97,14 @@ function App() {
         clickUpdate={updateProject}
         sortPriority={sortPriority}
       />
-      <footer className="pageFooter p-2 bg-success text-center text-white">
-        Created by RKVanHorn 2023
+      <footer className="pageFooter p-3 bg-success text-center">
+        <a
+          className="text-white fw-bold"
+          href="https://rvanhorn.dev"
+          target="_blank"
+        >
+          Created by RKVanHorn 2023
+        </a>
       </footer>
     </div>
   );

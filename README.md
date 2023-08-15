@@ -120,7 +120,10 @@ Don't forget to give the project a star! Thanks again!
 <!-- CONTACT -->
 ## Contact
 [![LinkedIn][linkedin-shield]][linkedin-url] <br/>
-R_VanHorn@outlook.com <br/>
+
+Email me at: R_VanHorn@outlook.com <br/>
+
+View more of my work at: https://rvanhorn.dev<br/>
 
 Project link: https://github.com/RKVanHorn/week15FEassignment
 
